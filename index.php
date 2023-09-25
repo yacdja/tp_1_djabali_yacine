@@ -72,6 +72,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"])) {
     <meta charset="UTF-8">
     <title>Formulaire Lampe</title>
 </head>
+<style>
+h1,h2,div,ul,.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+</style>
+
 <body>
     <h1>Gestion des Lampes</h1>
 
@@ -103,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["action"])) {
     <?php endif; ?>
 
     <!-- Formulaire pour interagir avec les fonctions de la classe Lampe -->
-    <form method="post">
+    <form method="post" class="centered">
         <label for="action">Action :</label>
         <select name="action" id="action">
             <option value="getLampes">Lister toutes les lampes</option>
