@@ -35,7 +35,6 @@ class CRUD{
         $oPDOStatement ->bindParam(':model', $lampe['model'], PDO::PARAM_STR);
         $oPDOStatement ->bindParam(':price', $lampe['price'], PDO::PARAM_STR);
     
-    
         //execution de la requete
         $oPDOStatement->execute();
     
