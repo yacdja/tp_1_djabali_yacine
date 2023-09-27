@@ -1,5 +1,5 @@
 <?php
-class Lampe {
+class Lampe extends CRUD {
     private $crud;
     private $id;
     private $brand;
